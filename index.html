@@ -20,17 +20,17 @@
         <form id="formSend">
           <div class="formElem">
             <label for="inpName">Ditt navn:</label>
-            <input type="text" name="inpName" placeholder="Navn Navnese">
+            <input type="text" id="inpName" name="inpName" placeholder="Navn Navnesen" required>
           </div>
 
           <div class="formElem">
             <label for="inpAge">Din alder:</label>
-            <input type="number" name="inpAge" placeholder="0" step="1" min="0">
+            <input type="number" id="inpAge" name="inpAge" placeholder="0" step="1" min="0" required>
           </div>
 
           <div class="formElem">
             <label for="inpAnimal">Ditt favorittdyr:</label>
-            <select id="selAnimal" name="selAnimal">
+            <select id="selAnimal" id="selAnimal" name="selAnimal" required>
               <option value="0">––– Velg et dyr –––</option>
             </select>
           </div>
