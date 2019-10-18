@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>IT1</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+
+
+
+
+    <div class="wrapSection">
+
+      <div id="wrapForm" class="wrap">
+        <h2>skjema</h2>
+        <p>Send inn data til en database</p>
+
+        <form id="formSend">
+          <div class="formElem">
+            <label for="inpName">Ditt navn:</label>
+            <input type="text" name="inpName" placeholder="Navn Navnese">
+          </div>
+
+          <div class="formElem">
+            <label for="inpAge">Din alder:</label>
+            <input type="number" name="inpAge" placeholder="0" step="1" min="0">
+          </div>
+
+          <div class="formElem">
+            <label for="inpAnimal">Ditt favorittdyr:</label>
+            <select id="selAnimal" name="selAnimal">
+              <option value="0">––– Velg et dyr –––</option>
+            </select>
+          </div>
+
+          <div class="formElem">
+            <button type="submit">Send inn</button>
+          </div>
+        </form>
+      </div>
+
+      </div>
+
+
+
+
+
+      <div class="wrapSection">
+        <div id="wrapTable" class="wrap">
+          <h2>tabell</h2>
+          <p>Se data fra databasen</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Navn</th>
+                <th>Alder</th>
+                <th>Favorittdyr</th>
+              </tr>
+            </thead>
+            <tbody id="table">
+              <!-- data from Firebase -->
+              <tr>
+                <td>Navn Navnesen</td>
+                <td>21</td>
+                <td>Hest</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="wrapSection">
+        <div id="wrapControls" class="wrap">
+          <h2>kontroll</h2>
+          <p>Slett eller oppdater databasen</p>
+
+          <form id="formDelete">
+            <div class="formElem">
+              <label for="inpDel">Velg data å slette:</label>
+              <select id="selDel" name="selDel">
+                <option value="0">––– Velg data –––</option>
+              </select>
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+
+
+
+  </body>
+
+
+
+
+  <!-- KOBLE FIREBASE MED NETTSIDA -->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+  https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-database.js"></script>
+
+  <script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBqoRmfDncWtnMIL1lbSJ-FSkf1XMXxums",
+    authDomain: "it1-eksamen.firebaseapp.com",
+    databaseURL: "https://it1-eksamen.firebaseio.com",
+    projectId: "it1-eksamen",
+    storageBucket: "it1-eksamen.appspot.com",
+    messagingSenderId: "887368983212",
+    appId: "1:887368983212:web:e7caca03a3733c32853509",
+    measurementId: "G-FJLXQEQL5B"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+
+<!-- EGET EKSTERN JS-DOKUMENT -->
+<script src="script.js"></script>
+
+
+
+
+</html>

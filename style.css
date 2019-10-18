@@ -1,0 +1,203 @@
+/* FULL RESET OF STYLE */
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: black;
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1 rem = 10 px */
+}
+
+body {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+
+
+
+
+/* ALL TEXT */
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 4rem;
+
+  color: #2f89fc;
+
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  letter-spacing: 0.15rem;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+
+  color: #585858;
+
+  text-align: center;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0.05rem;
+}
+
+label {
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+
+  color: #585858;
+
+  text-align: left;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0.05rem;
+}
+
+button {
+  margin: 0 auto;
+  padding: 1.5rem;
+
+  border: none;
+  border-radius: 0.5rem;
+
+  background: #2f89fc;
+
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+
+  color: #fff;
+
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15rem;
+
+  cursor: pointer;
+}
+
+
+
+
+
+/* ALL CLASSES */
+
+/* wrap all content inside one div */
+.wrapSection {
+  width: 25%;
+  height: 80vh;
+
+  /* horizontally centered */
+  /* top | left | bottom | right*/
+  margin: 5rem auto 0 auto;
+
+  border: 0 solid red;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+
+  border: 0 solid cyan;
+}
+
+/* Input section in form */
+.formElem {
+  width: 100%;
+
+  /* top & bottom | left & right */
+  margin: 2rem auto;
+
+  border: 0 solid blue;
+}
+
+
+
+
+
+/* ALL FORM ELEMENTS */
+
+form {
+  width: 100%;
+}
+
+input,
+select,
+select option {
+  width: 100%;
+
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+
+  color: #585858;
+
+  text-align: left;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0.05rem;
+}
+
+
+
+
+
+/* ALL FORM ELEMENTS */
+
+table {
+  width: 100%;
+
+  margin-top: 2rem;
+
+  border: 0 solid red;
+}
+
+thead,
+th {
+  padding: 1rem;
+
+  border-bottom: 1px solid #dedede;
+
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+
+  color: #585858;
+
+  text-align: left;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0.05rem;
+}
+
+tbody td {
+  padding: 1rem;
+
+  border-bottom: 1px solid #dedede;
+
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+
+  color: #585858;
+
+  text-align: left;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0.05rem;
+}
+
+
+
+
+
+/* ALL IDS */
