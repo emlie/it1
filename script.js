@@ -12,6 +12,10 @@ let selAnimal = document.querySelector('#selAnimal');
 let formDelete = document.querySelector('#formDelete');
 let selDel = document.querySelector('#selDel');
 
+let formUpdate = document.querySelector('#formUpdate');
+let selUpdate = document.querySelector('#selUpdate');
+let inpNewName = document.querySelector('#inpNewName');
+
 let table = document.querySelector('#table');
 
 
@@ -169,6 +173,13 @@ function showData(snapshot) {
     </option>
     `;
 
+    // Add data to select menu for updating a data entry
+    selUpdate.innerHTML += `
+    <option value="${key}">
+      ${personName} | ${personAge} | ${animalName}
+    </option>
+    `;
+
   });
 
 
@@ -202,12 +213,38 @@ function deleteData(event) {
 
 
 
-// Run functions
+// UPDATE THE NAME OF A DATA ENTRY
+function updateData(event) {
+
+  console.log('updateName');
+
+  // Value is primary key of data entry
+  let chosenData = selUpdate.value;
+
+  // Get input value
+  let newName = inpNewName.value;
+
+  // Find specific data entry in personsDB
+  let person = db.ref('persons/' + chosenData);
+
+  // Update data
+  person.update({
+    "name": newName
+  });
+
+}
+
+
+
+
+
+// RUN FUNCTIONS
 
 // When form is submitted by clicking the button of type="submit", run function
 formSendAnimal.onsubmit = sendAnimal;
 formSend.onsubmit = sendData;
 formDelete.onsubmit = deleteData;
+formUpdate.onsubmit = updateData;
 
 // A child (data entry) is added to the database every time a form is submitted
 // When a child is added, run function

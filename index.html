@@ -95,14 +95,36 @@
 
           <form id="formDelete">
             <div class="formElem">
-              <label for="inpDel">Velg data å slette:</label>
+              <label for="selDel">Velg data å slette:</label>
               <select id="selDel" name="selDel">
                 <option value="0">––– Velg data –––</option>
               </select>
             </div>
+
             <div class="formElem">
               <button type="submit">Slett data</button>
             </div>
+
+          </form>
+
+
+          <form id="formUpdate">
+            <div class="formElem">
+              <label for="selUpdate">Endre navnet til noen:</label>
+              <select id="selUpdate" name="selUpdate">
+                <option value="0">––– Velg data –––</option>
+              </select>
+            </div>
+
+            <div class="formElem">
+              <label for="inpNewName">Nytt navn:</label>
+              <input type="text" id="inpNewName" name="inpNewName" placeholder="Navn Navnesen" required>
+            </div>
+
+            <div class="formElem">
+              <button type="submit">Oppdater data</button>
+            </div>
+
           </form>
         </div>
       </div>
