@@ -5,6 +5,9 @@ Til muntlig-praktisk eksamen i IT1 skal det leveres et produkt som inneholder en
 <br><br>
 Denne nettsiden kan sees på som en helt enkel fasit med det mest nødvendige av kode.
 <br><br>
+## Databasen i Firebase
+![Database](firebase.png)
+<br><br>
 ## Kommentarer til koden
 **Noen forkortelser forklart**<br>
 * inp = input
