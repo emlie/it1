@@ -17,6 +17,16 @@
         <h2>skjema</h2>
         <p>Send inn data til en database</p>
 
+        <form id="formSendAnimal">
+          <div class="formElem">
+            <label for="inpAnimal">Legg til et dyr:</label>
+            <input type="text" id="inpAnimal" name="inpAnimal" placeholder="Et dyr" required>
+          </div>
+          <div class="formElem">
+            <button type="submit">Lagre dyr</button>
+          </div>
+        </form>
+
         <form id="formSend">
           <div class="formElem">
             <label for="inpName">Ditt navn:</label>
@@ -29,7 +39,7 @@
           </div>
 
           <div class="formElem">
-            <label for="inpAnimal">Ditt favorittdyr:</label>
+            <label for="selAnimal">Ditt favorittdyr:</label>
             <select id="selAnimal" id="selAnimal" name="selAnimal" required>
               <option value="0">––– Velg et dyr –––</option>
             </select>
@@ -62,11 +72,13 @@
             </thead>
             <tbody id="table">
               <!-- data from Firebase -->
+              <!-- example:
               <tr>
                 <td>Navn Navnesen</td>
                 <td>21</td>
                 <td>Hest</td>
               </tr>
+            -->
             </tbody>
           </table>
         </div>
@@ -87,6 +99,9 @@
               <select id="selDel" name="selDel">
                 <option value="0">––– Velg data –––</option>
               </select>
+            </div>
+            <div class="formElem">
+              <button type="submit">Slett data</button>
             </div>
           </form>
         </div>
@@ -128,7 +143,7 @@
 </script>
 
 
-<!-- EGET EKSTERN JS-DOKUMENT -->
+<!-- EGET EKSTERNT JS-DOKUMENT -->
 <script src="script.js"></script>
 
 

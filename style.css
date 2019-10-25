@@ -64,7 +64,7 @@ label {
 
 button {
   margin: 0 auto;
-  padding: 1.5rem;
+  padding: 0.8rem 1.5rem;
 
   border: none;
   border-radius: 0.5rem;
@@ -73,7 +73,7 @@ button {
 
   font-family: 'Lato', sans-serif;
   font-weight: normal;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 
   color: #fff;
 
@@ -105,9 +105,11 @@ button {
 
 .wrap {
   width: 100%;
-  height: 100%;
+  height: auto;
 
   border: 0 solid cyan;
+
+  margin-bottom: 5rem;
 }
 
 /* Input section in form */
@@ -128,6 +130,8 @@ button {
 
 form {
   width: 100%;
+
+  margin-bottom: 4rem;
 }
 
 input,
